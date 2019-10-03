@@ -1,6 +1,6 @@
-def expl():
-	file = '/home/kestutis/projects/vsai_20190918/house-prices-advanced-regression-techniques/data.txt'
-	with open(file, 'r') as f:
+
+def expl(file_loc = './data.txt'):
+	with open(file_loc, 'r') as f:
 		data = f.readlines()
 	data_dict = {} 
 	for term in data:
